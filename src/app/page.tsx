@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* tenho q arruamr a modal pra quando clicar
       na img aparecer uma descrição do filme igual do figma */}
-      {/* <MyModal/>*/}
+      {/* <MyModal/> */}
       
     </main>
   );

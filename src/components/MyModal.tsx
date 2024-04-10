@@ -1,13 +1,33 @@
 import React from "react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 
-export default function MyModal() {
-  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+export default function App() {
+  const {isOpen, onOpen, onClose} = useDisclosure();
+  const [backdrop, setBackdrop] = React.useState('opaque')
+
+  const backdrops = ["opaque", "blur", "transparent"];
+
+  const handleOpen = (backdrop) => {
+    setBackdrop(backdrop)
+    onOpen();
+  }
 
   return (
     <>
-      <Button onPress={onOpen}>Open Modal</Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+      <div className="flex flex-wrap gap-3">
+        {backdrops.map((b) => (
+          <Button  
+            key={b}
+            variant="flat" 
+            color="warning" 
+            onPress={() => handleOpen(b)}
+            className="capitalize"
+          >
+           {b}
+          </Button>
+        ))}  
+      </div>
+      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose}>
         <ModalContent>
           {(onClose) => (
             <>
