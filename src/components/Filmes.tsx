@@ -58,18 +58,9 @@ export default function Filmes() {
       alt="NextUI Fruit Image with Zoom"
       src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
     />
-    <Image
-      isZoomed
-      width={120}
-      alt="NextUI Fruit Image with Zoom"
-      src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
-    />
-    <Image
-      isZoomed
-      width={120}
-      alt="NextUI Fruit Image with Zoom"
-      src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
-    />
+    
+   
+
     
     </div>
   );

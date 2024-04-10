@@ -4,9 +4,11 @@ interface NavBarProps{
 }
 export default function NavBar(props:NavBarProps){
   const {active} = props
-  const classActive = "border-b-4 border-pink-500"
+  const classActive = "border-b-4 border-blue-500"
     return(
         <nav className="flex  w-full justify-between px-5 py-3 items-center">
+       
+        <img className="w-28 rounded-full"  src="./logo.png" alt="Avatar do usuário" />
         <h1 className="text-3xl font-bold">FilmLibrary</h1>
         <ul className="flex gap-20">
         <li className={active =="home" ? classActive:""}><Link href="/">home</Link></li>
