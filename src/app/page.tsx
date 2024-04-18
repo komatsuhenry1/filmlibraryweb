@@ -1,7 +1,7 @@
 import Filmes from "@/components/Filmes";
 import  Navbar  from "@/components/NavBar";
 import  Pesquisa  from "@/components/Pesquisa";
-import  MyModal  from "@/components/MyModal";
+// import  MyModal  from "@/components/MyModal";
 import App from "next/app";
 
 export default function Home() {
