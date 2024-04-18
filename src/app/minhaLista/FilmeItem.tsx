@@ -28,17 +28,11 @@ export function FilmeItem({ filme }: FilmeItemProps) {
 
     return (
     <>
-        <div className="flex justify-between p-2">
-            <div className="flex items-center gap-2">
-                <span>{filme.nome}</span>
-            </div>
-            <DropDownActions 
+    <div className="flex w-full">
+        <DropDownActions 
                 onEdit={() => router.push("/minhaLista/" + filme.id)}
                 onDelete={handleDelete} 
                 />
-        </div>
-        
-        <div className="flex justify-around w-full">
     <Image
       isZoomed
       width={120}
